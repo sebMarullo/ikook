@@ -460,7 +460,6 @@ label.myshp_sort_button {
 }
 #content .panel.sidebar-menu ul.nav.category-menu li a {
   text-transform: uppercase;
-  font-weight: bold;
 }
 #content .panel.sidebar-menu ul.nav ul {
   list-style: none;
@@ -474,7 +473,7 @@ label.myshp_sort_button {
   font-weight: normal;
   text-transform: none !important;
   display: block;
-  padding: 10px 15px;
+  padding: 5px 5px;
   padding-left: 30px;
   font-size: 12px;
   color: #999999;
@@ -684,7 +683,7 @@ a.myshp_button:hover {
   font-size: 30px;
   font-weight: 300;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0;
 }
 #content #productMain .buttons {
   margin-bottom: 0;
@@ -736,6 +735,9 @@ a.myshp_button:hover {
 }
 #content #details .social p a.email {
   background-color: #4a7f45;
+}
+#content #details hr{
+  margin-bottom: 0;
 }
 @media (max-width: 991px) {
   #content #details .social {
@@ -1887,6 +1889,10 @@ a.myshp_button_order:link, a.myshp_button_order:visited, a.myshp_button_order:ho
   margin-bottom: 10px;
 }
 
+.myshp_info_features #details{
+  margin-bottom:0;
+}
+
 /* Columns changed */
 
 .myshp_col1 {
@@ -2413,4 +2419,100 @@ form[name="data"] .box table h2{
     color: #4d97b8;
     background: transparent;
     font-size: 12px;
+}
+
+.cats_thumbs .cat__title{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    text-shadow: 1px 1px 2px #222;
+}
+
+.cat__container{
+    display: inline-block;
+    border-radius: 21em;
+    position: relative;
+    overflow: hidden;
+    height: 210px;
+    width: 210px !important;
+    margin-right: 10px;
+}
+
+.cats_thumbs .cat__thumb {
+    height: 100%;
+    padding: 0 !important;
+}
+
+.cats_thumbs .cats__container{
+  text-align:center;
+}
+
+.cats_thumbs .cats__container .cat__container:hover .cat__thumb {
+  opacity:0.8;
+}
+
+/* Login block changed */
+
+.myshp_side_login {
+  box-shadow:none;
+}
+
+h3.myshp_side_login__title {
+  margin-top:0;
+}
+
+/* ProductList modifications */
+
+.myshp_list_product_features table {
+  width:100%;
+}
+.myshp_list_product_features table td{
+  width:50%;s
+}
+
+.myshp_list_product_feature_label {
+  text-align:right;
+  padding: 0 10px;
+}
+
+.myshp_info_search_extended > fieldset > table {
+  display:none;
+}
+
+/* Menu Block changed */
+
+.myshp_menu .myshp_menu__box {
+  padding:0;
+}
+
+
+.myshp_menu .nav > li > div > a {
+  padding: 10px 10px 10px 25px;
+  display: block;
+}
+
+.myshp_menu .nav > li {
+  margin-top:0;
+}
+
+.myshp_menu.panel-default>.panel-heading{
+      margin-bottom: 10px;
+}
+
+/* MyAccount page changed */
+
+.myshp_myaccount.myshp_myaccount_homepage .myshp_control_buttons{
+    margin: 10px 0;
+}
+
+.myshp_myaccount.myshp_myaccount_homepage .myshp_button_logout:after{
+  content:"Logout";
+  color:#fff;
+  font-size:14px;
 }
